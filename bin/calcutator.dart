@@ -32,5 +32,8 @@ void main(List<String> arguments) {
     case '/':
       print(n1 / n2);
       break;
+    default:
+      print("Opção Inválida.");
+      exit(0);
   }
 }

@@ -15,4 +15,22 @@ void main(List<String> arguments) {
   print('Informe a operação matemática (+, -, *, /): ');
   line = stdin.readLineSync(encoding: utf8);
   var operacao = line ?? "0";
+
+  switch (operacao) {
+    case '+':
+      print(n1 + n2);
+      break;
+
+    case '-':
+      print(n1 - n2);
+      break;
+
+    case '*':
+      print(n1 * n2);
+      break;
+
+    case '/':
+      print(n1 / n2);
+      break;
+  }
 }

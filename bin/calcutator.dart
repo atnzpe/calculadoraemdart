@@ -1,4 +1,4 @@
-import 'package:calcutator/calcutator.dart' as calcutator;
+import 'package:calcutator/calculator.dart' as calculator;
 import 'dart:convert';
 import 'dart:io';
 
@@ -18,19 +18,19 @@ void main(List<String> arguments) {
 
   switch (operacao) {
     case '+':
-      print(n1 + n2);
+      print(calculator.sum(n1, n2));
       break;
 
     case '-':
-      print(n1 - n2);
+      print(calculator.minus(n1, n2));
       break;
 
     case '*':
-      print(n1 * n2);
+      print(calculator.multi(n1, n2));
       break;
 
     case '/':
-      print(n1 / n2);
+      print(calculator.div(n1, n2));
       break;
     default:
       print("Opção Inválida.");
